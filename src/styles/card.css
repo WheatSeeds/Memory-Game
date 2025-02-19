@@ -1,0 +1,13 @@
+.card-image{
+    width: auto;
+    height: 250px;
+}
+.card{
+    background-color: black;
+    border-radius: 10px;
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
