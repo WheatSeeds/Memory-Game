@@ -29,7 +29,7 @@ const Card = (
                 </div>
                 <div className="card-side card-side-back">
                     <div className='card-image-wrapper'>
-                        <img className='card-image-back' src='../../public/images/img_1.png' alt='back'/>
+                        <img className='card-image-back' src='./images/back_side.png' alt='back'/>
                     </div>
                 </div>
             </div>
