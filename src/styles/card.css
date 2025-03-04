@@ -1,13 +1,57 @@
-.card-image{
-    width: auto;
-    height: 250px;
-}
-.card{
-    background-color: black;
+.card {
+    width: 220px;
+    height: 220px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
     border-radius: 10px;
-    width: 200px;
-    height: 250px;
-    overflow: hidden;
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+.card-side{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card-side-front {
+    background: white;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+
+.card-side-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: white;
+    transform: rotateY(180deg);
+}
+
+.card-image-back{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.card-image-wrapper{
+    width: 200px;
+    height: 200px;
+}
+.card-image{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
