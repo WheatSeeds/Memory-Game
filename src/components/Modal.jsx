@@ -8,8 +8,8 @@ const Modal = (props) => {
         <div id='modal' className={visible.join(' ')}>
             <div className='modal-content'>
                 {props.playerIsWin === true
-                    ? <img src='../../public/gifs/ezgif-7c539b52674b82.gif'/>
-                    : <img src='../../public/gifs/ezgif-2065f43b84edce.gif'/>
+                    ? <img src='./gifs/ezgif-7c539b52674b82.gif'/>
+                    : <img src='./gifs/ezgif-2065f43b84edce.gif'/>
                 }
             </div>
             <div id='user-result'>
