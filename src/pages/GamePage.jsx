@@ -33,7 +33,7 @@ const GamePage = () => {
 
 
     function shuffleCards() {
-        setCards(prevCards => [...prevCards].sort(() => Math.random() - 0.5));
+        setCards([...cards].sort(() => Math.random() - 0.5));
     }
 
 

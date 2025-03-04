@@ -56,3 +56,31 @@
     display: flex;
     flex-direction: column;
 }
+@media (max-width: 500px) {
+    .modal-content {
+        width: 100%;
+        height: 300px;
+        max-width: 400px;
+    }
+    .modal-content > img {
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+        object-fit: cover;
+    }
+
+    #user-result {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #user-result > .user-result-block {
+        width: 100%;
+    }
+
+    .modal-btn {
+        width: 100%;
+        max-width: 400px;
+    }
+}

@@ -46,7 +46,7 @@ header{
 }
 @media (max-width: 500px) {
     header {
-        width: calc(100% - 100px);
+        width: 100%;
         flex-direction: column;
         align-items: center;
     }

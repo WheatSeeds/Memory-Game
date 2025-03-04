@@ -14,9 +14,9 @@ const Card = (
         <Tilt>
             <div className={`card ${isFlipped ? 'flipped' : ''}`} onClick={() => {
                 flipCard();
-                setTimeout(() => {
-                    if(currentScore + 1 >= 9){
-                        fetchCard();
+                setTimeout(async () => {
+                    if (currentScore + 1 >= 9) {
+                        await fetchCard();
                     }
                     shuffle()
                 }, 1000);
