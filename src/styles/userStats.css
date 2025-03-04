@@ -15,3 +15,27 @@
 .user-stats-container > span{
     font-size: 15px;
 }
+.user-stats-container{
+    width: max-content;
+}
+@media (max-width: 1000px) {
+    #user-stats{
+        gap: 25px;
+    }
+}
+@media (max-width: 800px) {
+    #user-stats{
+        gap: 0;
+        flex-direction: column;
+        align-items: end;
+    }
+}
+@media (max-width: 500px) {
+    #user-stats{
+        width: 465px;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        margin-top: 10px;
+    }
+}

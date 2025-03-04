@@ -14,7 +14,7 @@
 .modal-content{
     width: 500px;
     height: 300px;
-    background-color: white;
+    background-color: #eeeeee;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,8 +24,9 @@
     overflow: hidden;
 }
 .modal-content > img {
-    width: 105%;
-    height: auto;
+    width: 480px;
+    height: 280px;
+    object-fit: cover;
 }
 #user-result{
     display: flex;
@@ -38,7 +39,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: #eeeeee;
     border-radius: 12px;
 }
 .modal-btn{
@@ -48,6 +49,7 @@
     border: none;
     font-weight: 500;
     font-size: 20px;
+    cursor: pointer;
 }
 
 #modal.active{
